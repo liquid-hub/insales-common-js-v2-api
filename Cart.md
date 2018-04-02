@@ -1,6 +1,15 @@
 # Корзина
 
+<p align="right">
+ <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
+ :arrow_left: Назад</a>
+</p>
+
+
 - [Интерфейс](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)
+  - [Разметка-товара](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Разметка-товара)
+  - [Разметка-корзины](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Разметка-корзины)
+  - [Назначение-атрибутов](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Назначение-атрибутов)
 - [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Методы)
   - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#add)
   - [delete](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#delete)
@@ -10,13 +19,32 @@
   - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#setcoupon)
   - [getOrder](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#getorder)
 
-<p align="right">
- <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
- :arrow_left: Назад</a>
-</p>
-
-
 ## Интерфейс
+
+Для быстрого создания интерфейсов в commonjs предусмотрены готовые обработчики форм.
+
+Обработчики ссылаются на data-атрибуты. В data-атрибуты пробрасывается информация из liquid.
+
+### Назначение атрибутов
+
+<details>
+<summary>Подробнее</summary>
+
+| Атрибут              | Назначение                                                                      | Расположение                                              |
+|----------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------|
+| data-cart-form       | Обязательный атрибут для тега form                                              | Тег form для корзины                                      |
+| data-item-id         | Обязательный атрибут для позиций в корзине. Атрибут принимает id позиции.       | Обертка для позиции в корзине                             |
+| data-product-id      | Обязательный атрибут для инициализации товара. В атрибут передаётся id товара.  | Обертка для позиции в корзине                             |
+| data-item-delete     | Удаление из корзины                                                             | Обертка для позиции в корзине                             |
+| data-cart-update     | Обновление корзины                                                              | Внутри обёртки с атрибутом data-cart-form                 |
+| data-cart-update     | Обновление корзины                                                              | Внутри обёртки с атрибутом data-cart-form                 |
+| data-cart-clear      | Очищение корзины                                                                | Внутри обёртки с атрибутом data-cart-form                 |
+| data-coupon-submit   | Отправка купона                                                                 | Внутри обёртки с атрибутом data-cart-form                 |
+| data-quantity        | Обязательный атрибут для обёртки кнопок изменения колличества и инпута quantity | Внутри обертки с атрибутом data-product-id и data-item-id |
+| data-quantity-change | Атрибут для кнопок +/-, принимает число                                         | Внутри обёртки с атрибутом data-quantity                  |
+</details>
+
+---
 
 ### Разметка товара
 
@@ -85,26 +113,7 @@
 </details>
 
 ---
-
-### Назначение атрибутов
-
-<details>
-<summary>Подробнее</summary>
-
-| Атрибут              | Назначение                                                                      | Расположение                                              |
-|----------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------|
-| data-cart-form       | Обязательный атрибут для тега form                                              | Тег form для корзины                                      |
-| data-item-id         | Обязательный атрибут для позиций в корзине. Атрибут принимает id позиции.       | Обертка для позиции в корзине                             |
-| data-product-id      | Обязательный атрибут для инициализации товара. В атрибут передаётся id товара.  | Обертка для позиции в корзине                             |
-| data-item-delete     | Удаление из корзины                                                             | Обертка для позиции в корзине                             |
-| data-cart-update     | Обновление корзины                                                              | Внутри обёртки с атрибутом data-cart-form                 |
-| data-cart-update     | Обновление корзины                                                              | Внутри обёртки с атрибутом data-cart-form                 |
-| data-cart-clear      | Очищение корзины                                                                | Внутри обёртки с атрибутом data-cart-form                 |
-| data-coupon-submit   | Отправка купона                                                                 | Внутри обёртки с атрибутом data-cart-form                 |
-| data-quantity        | Обязательный атрибут для обёртки кнопок изменения колличества и инпута quantity | Внутри обертки с атрибутом data-product-id и data-item-id |
-| data-quantity-change | Атрибут для кнопок +/-, принимает число                                         | Внутри обёртки с атрибутом data-quantity                  |
-</details>
-
+---
 
 ## Методы
 
