@@ -17,8 +17,8 @@
   - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#remove)
   - [set](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#set)
   - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#setcoupon)
-  - [order.get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#order.get)
-  - [order.getItemByID](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#order.getItemByID)
+  - [order.get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#orderget)
+  - [order.getItemByID](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#ordergetitembyid)
 
 
 ## Интерфейс
