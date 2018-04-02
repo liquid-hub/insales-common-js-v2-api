@@ -57,8 +57,109 @@
 </form>
 ```
 </details>
+
 ---
 
+## Селектор модификаций
+## Настройки
+
+## Методы
+
+> Методы класса `Products`
+
+### get
+
+> Получить объект с информацией о товаре
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/**
+ * @param {number} id id товара
+ * @return {Deferred}
+ */
+Products.get(123456)
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Products.get(123456)
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+</details>
+
+---
+
+### getList
+
+> Получение списка товаров
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/**
+ * @param {Array} idList - массив, состоящий из id товаров
+ * @return {Deferred}
+ */
+Products.getList([123456, 123455, 1234454, 123458])
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Products.getList([123456, 123455, 1234454, 123458])
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+</details>
+
+---
+
+### setConfig
+
+> Обновление настроек
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+| Property     | Default       | Назначение                                                                                                                                |
+|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| options      | ```{ 'default': 'option-default' }``` | Через данный объект задаются шаблоны для вывода опций                                                                                     |
+| fileUrl      | Пустой объект | Объект для хранения картинок из раздела «Файлы»                                                                                           |
+| decimal      | Пустой объект | Колличество символов после запятой, для единиц измерения                                                                                  |
+| filtered     | true          | Если значение false, то в шаблоне вывода опций доступно свойство disabled Если значение true, то недоступные опции не выводятся в шаблон. |
+| showVariants | true          | При значении false, рендер опций не производится                                                                                          |
+| initOption   | true          | Отмечать активные опции при инициализации?                                                                                                |
+| useMax       | false         | Использовать максимальное колличество? Если значение true, в quantity невозможно указать колличество больше чем доступно на складе.       |
+</details>
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Products.setConfig({
+  showVariants: true,
+  hideSelect: true,
+  initOption: true,
+  fileUrl: {},
+  filtered: true,
+  selectUnavailable: true
+})
+```
+</details>
+
+---
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
