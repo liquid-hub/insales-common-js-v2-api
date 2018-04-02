@@ -21,7 +21,7 @@ EventBus (шина событий) предназначена для прост�
 - [publish](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/EventBus.md#publish)
 - [logger.add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/EventBus.md#loggeradd)
 
-### subscribe
+### :hammer: subscribe
 
 > Подписаться на событие
 
@@ -58,7 +58,7 @@ EventBus.subscribe('add_items:insales:cart', function (data) {
 
 ---
 
-### publish
+### :hammer: publish
 
 > Публикация события
 
@@ -86,7 +86,7 @@ EventBus.publish('event_id', {
 
 ---
 
-### logger.add
+### :hammer: logger.add
 
 > Добавление логера для компонента
 

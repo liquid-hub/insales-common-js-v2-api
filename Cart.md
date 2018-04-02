@@ -115,13 +115,12 @@
 </details>
 
 ---
----
 
 ## Методы
 
 > Методы класса `Cart`
 
-### add
+### :hammer: add
 
 > Добавить в корзину заданное кол-во товаров
 
@@ -182,7 +181,7 @@ EventBus.subscribe('add_items:insales:cart', function (data) {
 
 ---
 
-### delete
+### :hammer: delete
 
 > Удалить позиции из корзины
 
@@ -227,7 +226,7 @@ EventBus.subscribe('delete_items:insales:cart', function (data) {
 
 ---
 
-### clear
+### :hammer: clear
 
 > Полностью очистить корзину
 
@@ -259,7 +258,7 @@ EventBus.subscribe('clear_items:insales:cart', function (data) {
 
 ---
 
-### remove
+### :hammer: remove
 
 > Удадить из корзины заданное кол-во товаров
 
@@ -310,7 +309,7 @@ EventBus.subscribe('remove_items:insales:cart', function (data) {
 
 ---
 
-### set
+### :hammer: set
 
 > Устанавливает кол-во товаров в корзине для каждой позиции
 
@@ -361,7 +360,7 @@ EventBus.subscribe('set_items:insales:cart', function (data) {
 
 ---
 
-### setCoupon
+### :hammer: setCoupon
 
 > Устанавливает купон
 
@@ -406,7 +405,7 @@ EventBus.subscribe('set_coupon:insales:cart', function (data) {
 
 ---
 
-### order.get
+### :hammer: order.get
 
 > Получить состав корзины
 
@@ -421,7 +420,7 @@ console.log(order);
 
 ---
 
-### order.getItemByID
+### :hammer: order.getItemByID
 
 > Получить информацию о позиции по id
 

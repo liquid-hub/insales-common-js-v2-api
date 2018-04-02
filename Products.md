@@ -288,7 +288,7 @@ Products.setConfig({
 
 > Методы класса `Products`
 
-### get
+### :hammer: get
 
 > Получить объект с информацией о товаре
 
@@ -317,7 +317,7 @@ Products.get(123456)
 
 ---
 
-### getList
+### :hammer: getList
 
 > Получение списка товаров
 
@@ -346,7 +346,7 @@ Products.getList([123456, 123455, 1234454, 123458])
 
 ---
 
-### setConfig
+### :hammer: setConfig
 
 > Обновление настроек
 
@@ -381,7 +381,7 @@ Products.setConfig({
 
 ---
 
-### getInstance
+### :hammer: getInstance
 
 > Получаем экземпляр класса ProductInstance из jQuery DOM element
 
@@ -411,7 +411,7 @@ Products.getInstance($('.product-cart-control'))
 
 ---
 
-### initInstance
+### :hammer: initInstance
 
 > Инициализировать форму товара
 
