@@ -44,6 +44,8 @@ Cart.add({
 ```
 </details>
 
+---
+
 ### delete
 
 > Удалить позиции из корзины
@@ -70,6 +72,8 @@ Cart.delete({
 ```
 </details>
 
+---
+
 ### clear
 
 > Полностью очистить корзину
@@ -82,6 +86,8 @@ Cart.delete({
 Cart.clear();
 ```
 </details>
+
+---
 
 ### remove
 
@@ -115,6 +121,8 @@ Cart.remove({
 ```
 </details>
 
+---
+
 ### set
 
 > Устанавливает кол-во товаров в корзине для каждой позиции
@@ -147,6 +155,7 @@ Cart.set({
 ```
 </details>
 
+---
 
 ### setCoupon
 
@@ -174,6 +183,7 @@ Cart.setCoupon({
 ```
 </details>
 
+---
 
 ### getOrder
 
