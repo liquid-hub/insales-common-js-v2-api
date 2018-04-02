@@ -9,7 +9,35 @@
 ## Интерфейс
 
 <details>
-<summary><h3>Разметка корзины</h3></summary>
+<summary>Разметка товара</summary>
+
+```twig
+<form action="{{ cart_url }}" method="post" data-product-id="{{ product.id }}">
+  {% if product.show_variants? %}
+    <select name="variant_id" data-product-variants>
+      {% for variant in product.variants %}
+        <option value="{{ variant.id }}">{{ variant.title | escape }}</option>
+      {% endfor %}
+    </select>
+  {% else %}
+    <input type="hidden" name="variant_id" value="{{product.variants.first.id}}" >
+  {% endif %}
+  <input type="text" name="comment" value="">
+  <div data-quantity>
+    <input type="text" name="quantity" value="1" />
+    <span data-quantity-change="-1">-</span>
+    <span data-quantity-change="1">+</span>
+  </div>
+  <button type="submit" data-item-add>
+    Добавить в корзину
+  </button>
+</form>
+```
+
+</details>
+
+<details>
+<summary>Разметка корзины</summary>
 
 ```twig
 <form action="{{ cart_url }}" method="post" data-cart-form>
@@ -39,8 +67,9 @@
 </form>
 ```
 </details>
+
 <details>
-<summary><h3>Атрибуты</h3></summary>
+<summary>Назначение атрибутов</summary>
 
 | Атрибут              | Назначение                                                                      | Расположение                                              |
 |----------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------|
