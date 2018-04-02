@@ -5,6 +5,12 @@
  :arrow_left: Назад</a>
 </p>
 
+- [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md#Методы)
+ - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md#hammer-add)
+ - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md#hammer-remove)
+ - [getCompare](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md#hammer-getcompare)
+ - [update](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md#hammer-update)
+
 ## Интерфейс
 
 > Для быстрого создания интерфейсов в commonjs предусмотрены готовые обработчики форм.
