@@ -17,7 +17,9 @@
   - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#remove)
   - [set](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#set)
   - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#setcoupon)
-  - [getOrder](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#getorder)
+  - [order.get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#order.get)
+  - [order.getItemByID](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#order.getItemByID)
+
 
 ## Интерфейс
 
@@ -404,7 +406,7 @@ EventBus.subscribe('set_coupon:insales:cart', function (data) {
 
 ---
 
-### getOrder
+### order.get
 
 > Получить состав корзины
 
@@ -412,10 +414,26 @@ EventBus.subscribe('set_coupon:insales:cart', function (data) {
 <summary>:computer: Пример</summary>
 
 ```js
-var order = Cart.getOrder();
+var order = Cart.order.get();
 console.log(order);
 ```
 </details>
+
+---
+
+### order.getItemByID
+
+> Получить информацию о позиции по id
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+var item = Cart.order.getItemByID(138231315);
+console.log(item);
+```
+</details>
+
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
