@@ -1,5 +1,15 @@
 # Корзина
 
+- [Интерфейс](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)
+- [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Методы)
+  - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#add)
+  - [delete](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#delete)
+  - [clear](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#clear)
+  - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#remove)
+  - [set](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#set)
+  - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#setcoupon)
+  - [getOrder](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#getorder)
+
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
  :arrow_left: Назад</a>
@@ -8,8 +18,10 @@
 
 ## Интерфейс
 
+### Разметка товара
+
 <details>
-<summary>Разметка товара</summary>
+<summary>Подробнее</summary>
 
 ```twig
 <form action="{{ cart_url }}" method="post" data-product-id="{{ product.id }}">
@@ -36,8 +48,12 @@
 
 </details>
 
+---
+
+### Разметка корзины
+
 <details>
-<summary>Разметка корзины</summary>
+<summary>Подробнее</summary>
 
 ```twig
 <form action="{{ cart_url }}" method="post" data-cart-form>
@@ -68,8 +84,12 @@
 ```
 </details>
 
+---
+
+### Назначение атрибутов
+
 <details>
-<summary>Назначение атрибутов</summary>
+<summary>Подробнее</summary>
 
 | Атрибут              | Назначение                                                                      | Расположение                                              |
 |----------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------|
