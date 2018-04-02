@@ -15,6 +15,8 @@ EventBus (шина событий) предназначена для прост�
 
 Работа с шиной производится через объект EventBus.
 
+## Методы
+
 - [subscribe](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/EventBus.md#subscribe)
 - [publish](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/EventBus.md#publish)
 - [logger.add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/EventBus.md#loggeradd)
