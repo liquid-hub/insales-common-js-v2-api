@@ -42,6 +42,10 @@ EventBus (шина событий) предназначена для прост�
 EventBus.subscribe('event_id', function (data) {
   console.log(data)
 });
+
+EventBus.subscribe('add_items:insales:cart', function (data) {
+  console.log('Товар добавлен');
+});
 ```
 </details>
 
