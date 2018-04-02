@@ -130,8 +130,8 @@
 
 ```js
 /**
- * @param {Object} items хэш таблица добавляемых товаров. Ключ id варианта, значение кол-во.
- * @param {Object} comments комментарий к позиции заказа. Ключ id варианта, значение текст комментария.
+ * @param {Object} items объект с параметрами variant_id: quantity
+ * @param {Object} comments комментарий к позиции заказа. Ключ id варианта, значение текст комментария
  * @param {string} coupon купон
  */
 {
