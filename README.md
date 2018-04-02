@@ -7,6 +7,7 @@ Commonjs добавляет на сайт следущие модули:
 * [Products](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md)
 * [AjaxSearch](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/AjaxSearch.md)
 * [Compare](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md)
+* [Template](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Template.md)
 
 
 ## Подключение

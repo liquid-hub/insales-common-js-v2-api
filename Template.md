@@ -7,6 +7,10 @@
  :arrow_left: Назад</a>
 </p>
 
+- [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Template.md#Методы)
+  - [load](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Template.md#hammer-load)
+  - [render](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Template.md#hammer-render)
+
 ## Разметка
 
 > Шаблоны записываются в тег script с обязательными атрибутами `type`, `data-template-id`.
@@ -68,7 +72,7 @@ Template.load('<button class="button button--click_me"><%= title %></button>', '
 ```js
 /**
 * @param {Object} templateData - информация для шаблонизатора
-* @param {string} template_id - названи
+* @param {string} template_id - название шаблона
  */
 $(targetNode).html(Template.render({ title: 'Click me!' }, 'test-button' ));
 ```
