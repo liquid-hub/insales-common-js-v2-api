@@ -1,5 +1,10 @@
 # Корзина
 
+<p align="right">
+ <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
+ :arrow_left: Назад</a>
+</p>
+
 ## Методы
 
 ### add
@@ -40,6 +45,20 @@ Cart.add({
     123457: 'Мой комментарий'
   },
   coupon: 'Мой купон'
+});
+```
+</details>
+<details>
+<summary>:loudspeaker: События</summary>
+
+* before:insales:cart
+* add_items:insales:cart
+* update_items:insales:cart
+* always:insales:cart
+
+```js
+EventBus.subscribe('add_items:insales:cart', function (data) {
+  console.log('Товар добавлен');
 });
 ```
 </details>
@@ -197,3 +216,8 @@ var order = Cart.getOrder();
 console.log(order);
 ```
 </details>
+
+<p align="right">
+ <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
+ :arrow_left: Назад</a>
+</p>
