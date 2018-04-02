@@ -37,8 +37,8 @@ EventBus (шина событий) предназначена для прост�
 
 ```js
 /**
- * eventId {String} название события
- * callback {function} функция обработчик события
+ * @param {String} eventId название события
+ * @param {function} callback функция обработчик события
  */
 ```
 </details>
@@ -67,8 +67,8 @@ EventBus.subscribe('add_items:insales:cart', function (data) {
 
 ```js
 /**
- * eventId {String} название события
- * data {Object} любой тип данных, преимущественно `Object`
+ * @param {String} eventId название события
+ * @param {Object} data любой тип данных, преимущественно `Object`
  */
 ```
 </details>
@@ -102,8 +102,9 @@ EventBus.publish('event_id', {
 
 ```js
 /**
- * componentTitle {String} название компонента
+ * @param {String} componentTitle название компонента
  */
+EventBus.logger.add('cart')
 ```
 </details>
 

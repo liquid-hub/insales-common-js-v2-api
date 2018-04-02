@@ -160,6 +160,66 @@ Products.setConfig({
 
 ---
 
+### getInstance
+
+> Получаем экземпляр класса ProductInstance из jQuery DOM element
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/**
+ * @param {jQuery DOM element} $node jQuery DOM element например $('.product-cart-control')
+ */
+Products.getInstance($node)
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+
+</details>
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Products.getInstance($('.product-cart-control'))
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+</details>
+
+---
+
+### initInstance
+
+> Инициализировать форму товара
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/**
+ * @param {jQuery DOM element} $node jQuery DOM element например $('.product-cart-control')
+ */
+Products.initInstance($node)
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+
+</details>
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Products.initInstance($('.product-cart-control'))
+  .done(function (onDone) { console.log('onDone', onDone) })
+  .fail(function (onFail) { console.log('onFail', onFail) });
+```
+</details>
+
+---
+
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
  :arrow_left: Назад</a>

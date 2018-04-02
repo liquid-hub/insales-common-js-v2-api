@@ -130,9 +130,9 @@
 
 ```js
 /**
- * items {Object} хэш таблица добавляемых товаров. Ключ id варианта, значение кол-во.
- * comments {Object} комментарий к позиции заказа. Ключ id варианта, значение текст комментария.
- * coupon {string} купон
+ * @param {Object} items хэш таблица добавляемых товаров. Ключ id варианта, значение кол-во.
+ * @param {Object} comments комментарий к позиции заказа. Ключ id варианта, значение текст комментария.
+ * @param {string} coupon купон
  */
 {
   items: {
@@ -191,11 +191,11 @@ EventBus.subscribe('add_items:insales:cart', function (data) {
 
 ```js
 /**
- * items {Array} массив id вариантов к удалению
+ * @param {Array} items массив id вариантов к удалению
  */
- {
+ Cart.delete({
    items: [160549240, 160549242]
- }
+ })
 ```
 </details>
 <details>
@@ -268,14 +268,14 @@ EventBus.subscribe('clear_items:insales:cart', function (data) {
 
 ```js
 /**
-* items {Array}  объект с параметрами variant_id: quantity
+*  @param {Array} items объект с параметрами variant_id: quantity
 */
-{
+Cart.remove({
   items: {
     138231315: 1,
     138231316: 1
   }
-}
+})
 ```
 </details>
 <details>
@@ -319,14 +319,14 @@ EventBus.subscribe('remove_items:insales:cart', function (data) {
 
 ```js
 /**
-* items {Array}  объект с параметрами variant_id: quantity
+* @param {Array} items объект с параметрами variant_id: quantity
 */
-{
+Cart.set({
   items: {
     138231315: 1,
     138231316: 1
   }
-}
+})
 ```
 </details>
 <details>
@@ -370,11 +370,11 @@ EventBus.subscribe('set_items:insales:cart', function (data) {
 
 ```js
 /**
-* coupon {string}  код купона
+* @param {string} coupon код купона
 */
-{
+Cart.setCoupon({
   coupon: 'Мой купон'
-}
+})
 ```
 </details>
 <details>
