@@ -5,6 +5,21 @@
  :arrow_left: Назад</a>
 </p>
 
+- [Интерфейс](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Интерфейс)
+  - [Назначение атрибутов](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Назначение-атрибутов)
+  - [Разметка товара](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Разметка-товара)
+- [Селектор модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Селектор-модификаций)
+  - [Привязка шаблона модификации к опции](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Привязка-шаблона-модификации-к-опции)
+  - [Передать изображения для шаблона селектора модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Передать-изображения-для-шаблона-селектора-модификаций)
+  - [Шаблоны для селектора модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Шаблоны-для-селектора-модификаций)
+- [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Методы)
+  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#get)
+  - [getList](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#getlist)
+  - [setConfig](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#setconfig)
+  - [getInstance](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#getinstance)
+  - [initInstance](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#initinstance)
+
+
 ## Интерфейс
 
 > Для быстрого создания интерфейсов в commonjs предусмотрены готовые обработчики форм.
