@@ -11,14 +11,14 @@
   - [Разметка-товара](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Разметка-товара)
   - [Разметка-корзины](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Разметка-корзины)
 - [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Методы)
-  - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#add)
-  - [delete](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#delete)
-  - [clear](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#clear)
-  - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#remove)
-  - [set](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#set)
-  - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#setcoupon)
-  - [order.get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#orderget)
-  - [order.getItemByID](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#ordergetitembyid)
+  - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-add)
+  - [delete](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-delete)
+  - [clear](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-clear)
+  - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-remove)
+  - [set](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-set)
+  - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-setcoupon)
+  - [order.get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-orderget)
+  - [order.getItemByID](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-ordergetitembyid)
 
 
 ## Интерфейс

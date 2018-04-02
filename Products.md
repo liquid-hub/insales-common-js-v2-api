@@ -13,11 +13,11 @@
   - [Передать изображения для шаблона селектора модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Передать-изображения-для-шаблона-селектора-модификаций)
   - [Шаблоны для селектора модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Шаблоны-для-селектора-модификаций)
 - [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Методы)
-  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#get)
-  - [getList](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#getlist)
-  - [setConfig](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#setconfig)
-  - [getInstance](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#getinstance)
-  - [initInstance](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#initinstance)
+  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#hammer-get)
+  - [getList](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#hammer-getlist)
+  - [setConfig](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#hammer-setconfig)
+  - [getInstance](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#hammer-getinstance)
+  - [initInstance](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#hammer-initinstance)
 
 
 ## Интерфейс
