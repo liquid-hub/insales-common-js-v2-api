@@ -7,9 +7,9 @@
 
 
 - [Интерфейс](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)
+  - [Назначение-атрибутов](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Назначение-атрибутов)
   - [Разметка-товара](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Разметка-товара)
   - [Разметка-корзины](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Разметка-корзины)
-  - [Назначение-атрибутов](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Назначение-атрибутов)
 - [Методы](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#Методы)
   - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#add)
   - [delete](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#delete)
@@ -21,9 +21,9 @@
 
 ## Интерфейс
 
-Для быстрого создания интерфейсов в commonjs предусмотрены готовые обработчики форм.
+> Для быстрого создания интерфейсов в commonjs предусмотрены готовые обработчики форм.
 
-Обработчики ссылаются на data-атрибуты. В data-атрибуты пробрасывается информация из liquid.
+> Обработчики ссылаются на data-атрибуты. В data-атрибуты пробрасывается информация из liquid.
 
 ### Назначение атрибутов
 
@@ -116,6 +116,8 @@
 ---
 
 ## Методы
+
+> Методы класса `Cart`
 
 ### add
 
