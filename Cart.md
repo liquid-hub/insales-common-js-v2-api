@@ -51,10 +51,13 @@ Cart.add({
 <details>
 <summary>:loudspeaker: События</summary>
 
+> События класса EventBus
+
 * before:insales:cart
 * add_items:insales:cart
 * update_items:insales:cart
 * always:insales:cart
+
 
 ```js
 EventBus.subscribe('add_items:insales:cart', function (data) {
@@ -90,6 +93,23 @@ Cart.delete({
 })
 ```
 </details>
+<details>
+<summary>:loudspeaker: События</summary>
+
+> События класса EventBus
+
+* before:insales:cart
+* delete_items:insales:cart
+* update_items:insales:cart
+* always:insales:cart
+
+
+```js
+EventBus.subscribe('delete_items:insales:cart', function (data) {
+  console.log('Товары удалены');
+});
+```
+</details>
 
 ---
 
@@ -103,6 +123,23 @@ Cart.delete({
 
 ```js
 Cart.clear();
+```
+</details>
+<details>
+<summary>:loudspeaker: События</summary>
+
+> События класса EventBus
+
+* before:insales:cart
+* clear_items:insales:cart
+* update_items:insales:cart
+* always:insales:cart
+
+
+```js
+EventBus.subscribe('clear_items:insales:cart', function (data) {
+  console.log('Корзина очищена');
+});
 ```
 </details>
 
@@ -139,6 +176,23 @@ Cart.remove({
 })
 ```
 </details>
+<details>
+<summary>:loudspeaker: События</summary>
+
+> События класса EventBus
+
+* before:insales:cart
+* remove_items:insales:cart
+* update_items:insales:cart
+* always:insales:cart
+
+
+```js
+EventBus.subscribe('remove_items:insales:cart', function (data) {
+  console.log('Товары удалены');
+});
+```
+</details>
 
 ---
 
@@ -173,6 +227,23 @@ Cart.set({
 })
 ```
 </details>
+<details>
+<summary>:loudspeaker: События</summary>
+
+> События класса EventBus
+
+* before:insales:cart
+* set_items:insales:cart
+* update_items:insales:cart
+* always:insales:cart
+
+
+```js
+EventBus.subscribe('set_items:insales:cart', function (data) {
+  console.log('Корзина обновлена');
+});
+```
+</details>
 
 ---
 
@@ -199,6 +270,23 @@ Cart.set({
 Cart.setCoupon({
   coupon: 'Мой купон'
 })
+```
+</details>
+<details>
+<summary>:loudspeaker: События</summary>
+
+> События класса EventBus
+
+* before:insales:cart
+* set_coupon:insales:cart
+* update_items:insales:cart
+* always:insales:cart
+
+
+```js
+EventBus.subscribe('set_coupon:insales:cart', function (data) {
+  console.log('Добавлен купон');
+});
 ```
 </details>
 
