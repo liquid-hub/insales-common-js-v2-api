@@ -61,7 +61,213 @@
 ---
 
 ## Селектор модификаций
-## Настройки
+
+### Привязка шаблона модификации к опции
+
+> В методе `setConfig` нужно передать объект options в виде `имя опции: id шаблона`
+
+<details>
+<summary>Подробнее</summary>
+
+```js
+Products.setConfig({
+  options: {
+    'Цвет': 'option-image',
+    'Размер': 'option-radio',
+    'Материал': 'option-select',
+    'Жесткий диск': 'option-span'
+  }
+});
+```
+
+Пример шаблона
+
+```html
+<script type="text/template" data-template-id="option-span">
+  <div class="<%= classes.option %> is-span">
+    <label class="<%= classes.label %>"><%= title %></label>
+    <div class="<%= classes.values %>">
+      <% _.forEach(values, function (value){ %>
+        <button class="<%= value.classes.all %> is-span"
+          <%= value.controls %>
+          <%= value.state %>
+        >
+          <%= value.title %>
+        </button>
+      <% }) %>
+    </div>
+  </div>
+</script>
+```
+</details>
+
+---
+
+### Передать изображения для шаблона селектора модификаций
+
+> Ссылки формируются в виде `значение свойства + .png | file_url`
+
+<details>
+<summary>Подробнее</summary>
+
+```twig
+<script>
+  {% comment %}
+    создание объекта с картинками из файлов для collection
+  {% endcomment %}
+  if (!fileUrl) {
+   var fileUrl = {}
+  }
+  {% assign option_title  = 'Цвет' %}
+  {% assign collection_handle  = 'all' %}
+  {% assign image_format  = '.png' %}
+  {% for option_name in collections[collection_handle].options %}
+    {% if option_name.title == option_title %}
+      {% for option_value in option_name.values %}
+        {% capture fileName %}{{option_value.title | replace: ' ',  '_' }}{{image_format}}{% endcapture %}
+        {% assign fileURL = fileName | file_url  %}
+        {% if fileURL %}
+          fileUrl['{{ option_value.title | downcase }}'] = '{{ fileURL }}';
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</script>
+
+<script>
+  {% comment %}
+    создание объекта с картинками из файлов для product
+  {% endcomment %}
+  if (!fileUrl) {
+   var fileUrl = {}
+  }
+  {% assign option_title  = 'цвет' %}
+  {% assign image_format  = '.png' %}
+  {% for option in product.options %}
+    {% assign option-title = option.title | downcase %}
+    {% if option-title == option_title %}
+     {% for value in option.values %}
+       {% capture fileName %}{{value.title | replace: ' ',  '_'}}{{image_format}}{% endcapture %}
+       {% assign fileURL = fileName | downcase | file_url  %}
+       {% if fileURL %}
+        fileUrl['{{ value.title | downcase }}'] = encodeURI('{{ fileURL }}');
+       {% endif %}
+     {% endfor %}
+    {% endif %}
+  {% endfor %}
+</script>
+
+<script>
+  Products.setConfig({
+    fileUrl: (typeof fileUrl == 'undefined') ? {} : fileUrl
+  });
+</script>
+```
+</details>
+
+---
+
+### Шаблоны для селектора модификаций
+
+<details>
+<summary>select</summary>
+
+```html
+<script type="text/template" data-template-id="option-select">
+  <div class="<%= classes.option %> is-select">
+    <label class="<%= classes.label %>"><%= title %></label>
+    <select class="<%= classes.values %>" data-option-bind="<%= option.id %>">
+      <% _.forEach(values, function (value){ %>
+        <option
+          <%= value.controls %>
+          <%= value.state %>
+        >
+          <%= value.title %>
+        </option>
+      <% }) %>
+    </select>
+  </div>
+</script>
+```
+</details>
+<details>
+<summary>span</summary>
+
+```html
+<script type="text/template" data-template-id="option-span">
+  <div class="<%= classes.option %> is-span">
+    <label class="<%= classes.label %>"><%= title %></label>
+    <div class="<%= classes.values %>">
+      <% _.forEach(values, function (value){ %>
+        <button class="<%= value.classes.all %> is-span"
+          <%= value.controls %>
+          <%= value.state %>
+        >
+          <%= value.title %>
+        </button>
+      <% }) %>
+    </div>
+  </div>
+</script>
+```
+</details>
+<details>
+<summary>radio</summary>
+
+```html
+<script type="text/template" data-template-id="option-radio">
+  <div class="<%= classes.option %> is-radio">
+    <label class="<%= classes.label %>"><%= title %></label>
+
+    <div class="<%= classes.values %>">
+      <% _.forEach(values, function (value){ %>
+        <label class="<%= value.classes.all %> is-radio">
+          <input class="<%= value.classes.state %>"
+
+            type="radio"
+            name="<%= handle %>"
+
+            <%= value.state %>
+            <%= value.controls %>
+          >
+          <span><%= value.title %></span>
+        </label>
+      <% }) %>
+    </div>
+  </div>
+</script>
+```
+</details>
+<details>
+<summary>image</summary>
+
+```html
+<script type="text/template" data-template-id="option-image">
+  <div class="<%= classes.option %> option-<%= option.handle %>">
+    <label class="<%= classes.label %>"><%= title %></label>
+    <div>
+      <% _.forEach(option.values, function (value){ %>
+        <span
+          data-option-bind="<%= option.id %>"
+          data-value-position="<%= value.position %>"
+          class="option-image
+          <% if (option.selected == value.position & initOption) { %>active<% } %>
+          <% if (value.disabled) { %>disabled<% } %>"
+        >
+          <% if (images[value.name]) { %>
+            <img src="<%= images[value.name].small_url %>" alt="<%= value.title %>">
+          <% }else{ %>
+            <span><%= value.title %></span>
+          <% } %>
+        </span>
+      <% }) %>
+    </div>
+  </div>
+</script>
+```
+</details>
+
+---
 
 ## Методы
 
@@ -151,7 +357,7 @@ Products.setConfig({
   showVariants: true,
   hideSelect: true,
   initOption: true,
-  fileUrl: {},
+  fileUrl: (typeof fileUrl == 'undefined') ? {} : fileUrl,
   filtered: true,
   selectUnavailable: true
 })
