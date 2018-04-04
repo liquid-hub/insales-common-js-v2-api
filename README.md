@@ -1,4 +1,4 @@
-# Шпаргалка по commonjs v2 на платформе InSales
+# Шпаргалка по JS API InSales v2 на платформе InSales
 
 Commonjs добавляет на сайт следущие модули:
 
@@ -8,11 +8,12 @@ Commonjs добавляет на сайт следущие модули:
 * [AjaxSearch](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/AjaxSearch.md)
 * [Compare](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Compare.md)
 * [Template](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Template.md)
+* [ajaxAPI](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md)
 
 
 ## Подключение
 
-Для подключения Common.js необходимо прописать настройку в settings_data.json — "common_js_version": "v2".
+Для подключения JS API InSales v2 необходимо прописать настройку в settings_data.json — "common_js_version": "v2".
 
 Файл settings_data.json не доступен через бэк-офис, поэтому новое свойство нужно добавлять вручную через скачивание темы и последующей установке с новыми параметрами. Так же файл можно поправить если для разработки вы используете — [InSales-uploader](https://insales.github.io/insales-uploader/).
 
