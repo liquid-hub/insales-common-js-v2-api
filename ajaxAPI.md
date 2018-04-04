@@ -269,6 +269,66 @@ ajaxAPI.shop.message({
 
 ---
 
+### :hammer: ajaxAPI.product.getList
+
+>  Получение информации о списке товаров
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+* Важно! Отсутствует поле "подробное описание".
+*
+* @param {array} ids - список id товаров, за раз моно получить информацию не более чем о 100 товарах
+*/
+
+ajaxAPI.product.getList([123456,123457,123458,123459])
+  .done(function (onDone) {console.log('onDone: ', onDone) })
+  .fail(function (onFail) {console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+ajaxAPI.product.getList([123456,123457,123458,123459])
+  .done(function (onDone) {console.log('onDone: ', onDone) })
+  .fail(function (onFail) {console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
+### :hammer: ajaxAPI.product.get
+
+>  Получение информации о товаре
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+* @param {number} id - id товара
+*/
+
+ajaxAPI.product.get(123456)
+  .done(function (onDone) {console.log('onDone: ', onDone) })
+  .fail(function (onFail) {console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+ajaxAPI.product.get(123456)
+  .done(function (onDone) {console.log('onDone: ', onDone) })
+  .fail(function (onFail) {console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
