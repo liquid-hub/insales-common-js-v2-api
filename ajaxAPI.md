@@ -223,6 +223,52 @@ ajaxAPI.shop.review(reviewOption, '/collection/shop/product/main')
 
 ---
 
+### :hammer: ajaxAPI.shop.comment
+
+>  Отправка комментария к статье
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+* @param {Object} comment - объект с комментарием. ОБЯЗАТЕЛЬНО
+* @param {String} comment.author - автор комментария. ОБЯЗАТЕЛЬНО
+* @param {String} comment.email - e-mail посетителя. ОБЯЗАТЕЛЬНО
+* @param {String} comment.content - тело комментария.ОБЯЗАТЕЛЬНО
+* @param {String} comment.captcha_solution - капча. ОБЯЗАТЕЛЬНО
+* @param {String} articleUrl - url статьи, к которому хотим оставить отзыв
+*/
+
+
+ajaxAPI.shop.comment(comment, articleUrl)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+var commentOption = {
+  author: 'Пользователь',
+  email: 'user@mail.ru',
+  content: 'Текст'
+}
+if ($('#recaptcha-token').length) {
+    reviewOption['g-recaptcha-response'] = $('#recaptcha-token').val();
+}else{
+  reviewOption['captcha_solution'] = $('[name="review[captcha_solution]"]').val();
+}
+
+ajaxAPI.shop.comment(commentOption, '/blogs/blog/aktsiya')
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
 ### :hammer: ajaxAPI.shop.message
 
 >  Отпаравка сообщений
@@ -324,6 +370,101 @@ ajaxAPI.product.get(123456)
 ajaxAPI.product.get(123456)
   .done(function (onDone) {console.log('onDone: ', onDone) })
   .fail(function (onFail) {console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
+### :hammer: ajaxAPI.collection.get
+
+>  Получение информации о коллекции
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+* @param {string} handle - пермалинк коллекции, объязателен.
+* @param {Object} filter - объект с выбранными параметрами для фильтрации
+* @param {Object} pager - объект с настройками пагинации
+* @param {number} pager.page_size - размер разбивки на страницы
+* @param {number} pager.page - номер страницы, по которой получаем информацию
+*/
+
+var filter = {
+  price_min: 4000,
+  price_max: 10000
+};
+
+var pager = {
+  page_size: 25,
+  page: 2
+}
+
+ajaxAPI.collection.get('collection_handle', filter, pager)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+var filter = {
+  price_min: 4000,
+  price_max: 10000
+};
+
+var pager = {
+  page_size: 25,
+  page: 2
+}
+
+ajaxAPI.collection.get('collection_handle', filter, pager)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
+### :hammer: ajaxAPI.checkout.order
+
+>  Оформление заказа с указанием способа оплаты и доставки. Важно - все поля обязательны для заполнения.
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+* @param {Object} client - объект с полями {email: почта, name: имя, phone: телефон}
+* @param {string} client.email - почта
+* @param {string} client.name - ФИО
+* @param {string} client.phone - телефон
+* @param {Object} order - объект с обязательными полями
+* @param {number} order.delivery - id способа доставки
+* @param {number} order.payment - id способа оплаты
+*/
+
+ajaxAPI.checkout.order(client, order)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+ajaxAPI.checkout.order({
+  email: 'user@mail.ru',
+  name: 'user',
+  phone: '79879991122'
+  }, {
+  delivery: 1111111,
+  payment: 2222222
+})
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
 ```
 </details>
 
