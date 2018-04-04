@@ -470,6 +470,80 @@ ajaxAPI.checkout.order({
 
 ---
 
+### :hammer: ajaxAPI.compare.add
+
+>  Добавление товара в сравнение
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+ * @param {number} id - id товара, добавляемого в сравнение
+*/
+
+ajaxAPI.compare.add(123456)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+ajaxAPI.compare.add(123456)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
+### :hammer: ajaxAPI.compare.remove
+
+>  Удаление товара из сравнения
+
+<details>
+<summary>:memo: Параметры</summary>
+
+```js
+/*
+ * @param {number} id - id товара, удаляемого из списка.
+*/
+
+ajaxAPI.compare.remove(123456)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+ajaxAPI.compare.remove(123456)
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
+### :hammer: ajaxAPI.compare.get
+
+>  Получение списка сравнения
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+ajaxAPI.compare.get()
+  .done(function (onDone) { console.log('onDone: ', onDone) })
+  .fail(function (onFail) { console.log('onFail: ', onFail) });
+```
+</details>
+
+---
+
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
