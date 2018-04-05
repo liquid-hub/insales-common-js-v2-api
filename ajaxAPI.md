@@ -5,6 +5,27 @@
  :arrow_left: Назад</a>
 </p>
 
+- Корзина
+  - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicartadd)
+  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicartget)
+  - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicartremove)
+  - [update](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicartupdate)
+- Магазин
+  - [client](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopclient)
+  - [review](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopreview)
+  - [comment](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopcomment)
+  - [message](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopmessage)
+- Товар
+  - [getList](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapiproductgetList)
+  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapiproductget)
+- Категория
+  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicollectionget)
+- Оформление заказа
+  - [order](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicheckoutorder)
+- Сравнение
+  - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicompareadd)
+  - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicompareremove)
+  - [get](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicompareget)
 ## Методы
 
 > Методы объекта `ajaxAPI`
