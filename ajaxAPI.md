@@ -172,7 +172,7 @@ ajaxAPI.cart.update(items, optins)
 
 ---
 
-### :hammer: ajaxAPI.shop.client
+### :hammer: ajaxAPI.shop.client.get
 
 >  Получение информации о посетителе сайта
 
@@ -188,7 +188,7 @@ ajaxAPI.cart.update(items, optins)
 * { status: "error", message: "Not authorized", url: "/client_account/session/new" }
 */
 
-ajaxAPI.shop.client()
+ajaxAPI.shop.client.get()
   .done(function (onDone) { console.log('onDone: ', onDone) })
   .fail(function (onFail) { console.log('onFail: ', onFail) })
 
