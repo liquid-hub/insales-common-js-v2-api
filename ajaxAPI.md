@@ -11,7 +11,7 @@
   - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicartremove)
   - [update](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapicartupdate)
 - Магазин
-  - [client](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopclient)
+  - [client](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopclientget)
   - [review](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopreview)
   - [comment](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopcomment)
   - [message](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/ajaxAPI.md#hammer-ajaxapishopmessage)
