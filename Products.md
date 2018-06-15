@@ -8,6 +8,7 @@
 - [Интерфейс](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Интерфейс)
   - [Назначение атрибутов](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Назначение-атрибутов)
   - [Разметка товара](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Разметка-товара)
+- [События](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#События)
 - [Селектор модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Селектор-модификаций)
   - [Привязка шаблона модификации к опции](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Привязка-шаблона-модификации-к-опции)
   - [Передать изображения для шаблона селектора модификаций](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Products.md#Передать-изображения-для-шаблона-селектора-модификаций)
@@ -74,6 +75,16 @@
 </details>
 
 ---
+
+## События
+
+| Событие                           | Описание                                                              |
+|-----------------------------------|-----------------------------------------------------------------------|
+| before:insales:product            | Событие срабатывает перед любым взаимодействием с компонетом продукта |
+| always:insales:product            | Событие срабатывает после любого взаимодействия с компонетом продукта |
+| change_quantity:insales:product   | Обновление кол-ва в продукте                                          |
+| unchange_quantity:insales:product | Если введено кол-во больше доступного                                 |
+| update_variant:insales:product    | Обновление варианта в продукте                                        |
 
 ## Селектор модификаций
 
