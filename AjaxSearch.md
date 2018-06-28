@@ -19,9 +19,9 @@
 
 |Атрибут|Назначение|Расположение|
 |-|-|-|
-|data-search-field|Поле для ввода поискового запроса|Тег form c атрибутом `action="data-search-field"`|
-|data-search-result|Блок в который записывается результат поиска|Тег form c атрибутом `action="data-search-field"`|
-|[name="lang"]|Текущий язык|Тег form c атрибутом `action="data-search-field"`|
+|data-search-field|Поле для ввода поискового запроса|Тег form|
+|data-search-result|Блок в который записывается результат поиска|Тег form|
+|[name="lang"]|Текущий язык|Тег form|
 
 
 ```twig
