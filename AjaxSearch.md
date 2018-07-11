@@ -76,6 +76,23 @@
 ```
 </details>
 
+<details>
+<summary>:loudspeaker: События</summary>
+
+> События класса EventBus
+
+* before:insales:search -	Событие срабатывает перед любым взаимодействием с компонетом поиск
+* update:insales:search -	Событие срабатывает после обновления результатов поиска
+* always:insales:search -	Событие срабатывает после любого взаимодействия с компонетом поиск
+
+
+```js
+EventBus.subscribe('update:insales:search', function (data) {
+  console.log('Товар добавлен');
+});
+```
+</details>
+
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
