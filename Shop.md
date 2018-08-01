@@ -38,6 +38,22 @@ Shop.money.format(1234.00);
 
 ---
 
+### :hammer: Shop.config.getProducId()
+
+> Получить product-id на странице товара
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Shop.config.getProducId();
+// на странице товара вернет -> "70513124"
+// на остальных страницах -> null
+```
+</details>
+
+---
+
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
