@@ -260,7 +260,7 @@ EventBus.subscribe('clear_items:insales:cart', function (data) {
 
 ### :hammer: remove
 
-> Удадить из корзины заданное кол-во товаров
+> Удалить из корзины заданное кол-во товаров
 
 <details>
 <summary>:memo: Параметры</summary>
