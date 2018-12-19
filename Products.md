@@ -278,7 +278,7 @@ Products.setConfig({
           data-value-position="<%= value.position %>"
           class="option-image
           <% if (option.selected == value.position & initOption) { %>active<% } %>
-          <% if (value.disabled) { %>disabled<% } %>"
+          <% if (!value.available) { %>disabled<% } %>"
         >
           <% if (images[value.name]) { %>
             <img src="<%= images[value.name].small_url %>" alt="<%= value.title %>">
