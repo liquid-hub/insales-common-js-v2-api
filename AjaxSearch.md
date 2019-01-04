@@ -88,7 +88,7 @@
 
 ```js
 EventBus.subscribe('update:insales:search', function (data) {
-  console.log('Товар добавлен');
+  console.log(data);
 });
 ```
 </details>
