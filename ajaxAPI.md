@@ -414,7 +414,8 @@ ajaxAPI.product.get(123456)
 
 var filter = {
   price_min: 4000,
-  price_max: 10000
+  price_max: 10000,
+  characteristics: [ 18775928, 18775929 ]
 };
 
 var pager = {
