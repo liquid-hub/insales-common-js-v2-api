@@ -54,8 +54,28 @@ Shop.config.getProducId();
 
 ---
 
+---
+
+### :hammer: Shop.config.get()
+
+> Получить конфигурацию
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Shop.config.get();
+```
+</details>
+
+---
+
+
 
 <p align="right">
  <a href="https://github.com/liquid-hub/insales-common-js-v2-api">
  :arrow_left: Назад</a>
 </p>
+
+
+
