@@ -293,6 +293,33 @@ Products.setConfig({
 ```
 </details>
 
+<details>
+<summary>preview</summary>
+
+```html
+<script type="text/template" data-template-id="option-preview">
+<div class="<%= classes.option %> option-<%= option.handle %>" is-span is-preview">
+  <label class="<%= classes.label %>"><%= title %></label>
+  <div class="<%= classes.values %>">
+    <% _.forEach(values, function (value){ %>
+      <button class="<%= value.classes.all %> is-span is-preview"
+        <%= value.controls %>
+        <%= value.state %>
+      >
+        <% if(value.imageFromVariant){ %>
+          <img width="40px" src="<%= value.imageFromVariant.medium_url %>" alt="<%= value.titleWithoutQuotes %>" title="<%= value.titleWithoutQuotes %>">
+        <% }else{ %>
+          <span><%= value.title %></span>
+        <% } %>
+      </button>
+    <% }) %>
+  </div>
+</div>
+
+</script>
+```
+</details>
+
 ---
 
 ## Методы
