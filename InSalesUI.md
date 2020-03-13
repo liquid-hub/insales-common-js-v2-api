@@ -113,4 +113,4 @@ EventBus.subscribe("update_items:insales:cart", function(cart) {
 
 ### :hammer: InSalesUI.bindUpdateCart
 
-> Обновление слушателей quantity
+> Обновление слушателей quantity в форме корзины
