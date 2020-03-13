@@ -110,3 +110,7 @@ EventBus.subscribe("update_items:insales:cart", function(cart) {
 </details>
 
 ---
+
+### :hammer: InSalesUI.bindUpdateCart
+
+> Обновление слушателей quantity
