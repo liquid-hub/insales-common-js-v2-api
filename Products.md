@@ -44,9 +44,6 @@
 
 ### Разметка товара
 
-<details>
-<summary>Подробнее</summary>
-
 ```twig
 <form action="{{ cart_url }}" method="post" data-product-id="{{ product.id }}">
   {% if product.show_variants? %}
@@ -69,7 +66,6 @@
   </button>
 </form>
 ```
-</details>
 
 ---
 
