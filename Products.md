@@ -40,6 +40,14 @@
 | data-item-add         | Добавление товара в корзину, для данного атрибута следует использовать тег button\[type="submit"\]                                                        | Внутри формы с атрибутом data-product-id                      |
 | name="comment"        | Комментарий к позиции заказа, для работы поля с данным атрибутом комментарии к заказам должны быть включены в бэк-офисе                                   | Input\[type="text"\] внутри формы с атрибутом data-product-id |
 
+Для установки минимального значения в инпуте кол-ва товара укажите атрибут data-min
+```twig
+  <div data-quantity data-min="10">
+    <input type="text" name="quantity" value="10" />
+    <span data-quantity-change="-10">-</span>
+    <span data-quantity-change="10">+</span>
+  </div>
+```
 
 ---
 
