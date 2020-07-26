@@ -14,6 +14,7 @@
   - [add](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-add)
   - [delete](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-delete)
   - [clear](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-clear)
+  - [forceUpdate](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-forceUpdate)
   - [remove](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-remove)
   - [set](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-set)
   - [setCoupon](https://github.com/liquid-hub/insales-common-js-v2-api/blob/master/Cart.md#hammer-setcoupon)
@@ -251,6 +252,21 @@ Cart.clear();
 EventBus.subscribe('clear_items:insales:cart', function (data) {
   console.log('Корзина очищена');
 });
+```
+</details>
+
+---
+
+### :hammer: forceUpdate
+
+> Принудительно обновить данные корзины
+
+
+<details>
+<summary>:computer: Пример</summary>
+
+```js
+Cart.forceUpdate()
 ```
 </details>
 
